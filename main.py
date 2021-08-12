@@ -30,8 +30,11 @@ def play_game():
 	result = compare(users_score, dealers_score)
 	show_final_score(users_cards, dealers_cards, result)
 
-if __name__ == "__main__":
+def main():
 	while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == 'y':
 		system('cls')
 		play_game()
+
+if __name__ == "__main__":
+	main()
 	
